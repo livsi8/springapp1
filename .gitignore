@@ -1,0 +1,7 @@
+.idea/
+target
+*.iml
+config.properties
+*.allure
+pom.xml
+voyage/pom.xml
