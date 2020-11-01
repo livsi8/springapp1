@@ -9,7 +9,7 @@
 
     <bean id="classicalMusicBean"   class="spring.ClassicalMusic"/>
     <bean id="rockMusicBean"        class="spring.RockMusic"/>
-    <!--<bean id="musicPlayerBean"      class="spring.MusicPlayer">-->
-        <!--<constructor-arg value="rockMusicBean"/>-->
-    <!--</bean>-->
+    <bean id="musicPlayerBean"      class="spring.MusicPlayer">
+        <constructor-arg ref="rockMusicBean"/>
+    </bean>
 </beans>
