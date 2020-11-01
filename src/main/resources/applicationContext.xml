@@ -12,7 +12,12 @@
     <bean id="classicalMusicBean"   class="spring.ClassicalMusic"/>
     <bean id="rockMusicBean"        class="spring.RockMusic"/>
     <bean id="musicPlayerBean"      class="spring.MusicPlayer">
-        <property name="music" ref="classicalMusicBean"/>
+        <property name="musicList">
+            <list>
+                <ref bean="rockMusicBean"/>
+                <ref bean="classicalMusicBean"/>
+            </list>
+        </property>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
