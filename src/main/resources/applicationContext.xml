@@ -11,7 +11,7 @@
 
     <bean id="classicalMusicBean"   class="spring.ClassicalMusic"/>
     <bean id="rockMusicBean"        class="spring.RockMusic"/>
-    <bean id="musicPlayerBean"      class="spring.MusicPlayer">
+    <bean id="musicPlayerBean"      class="spring.MusicPlayer" scope="prototype">
         <property name="musicList">
             <list>
                 <ref bean="rockMusicBean"/>
