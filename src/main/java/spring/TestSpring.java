@@ -15,12 +15,12 @@ public class TestSpring {
         MusicPlayer musicPlayer2 = context.getBean("musicPlayerBean", MusicPlayer.class);
         Boolean aBoolean = musicPlayer1 == musicPlayer2;
         System.out.println("musicPlayer1 == musicPlayer2 = " + aBoolean);
-        System.out.println(musicPlayer1);
-        System.out.println(musicPlayer2);
-
-        musicPlayer1.setVolume(25);
-        System.out.println(musicPlayer1.getVolume());
-        System.out.println(musicPlayer2.getVolume());
+//        System.out.println(musicPlayer1);
+//        System.out.println(musicPlayer2);
+//
+//        musicPlayer1.setVolume(25);
+//        System.out.println(musicPlayer1.getVolume());
+//        System.out.println(musicPlayer2.getVolume());
 
 //        musicPlayer.playMusic();
 //        System.out.println(musicPlayer.getName());
